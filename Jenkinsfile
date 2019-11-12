@@ -1,5 +1,5 @@
 #!/usr/bin/env groovy
-library identifier: "jengu@master",
+library identifier: "jengu@v0.1.0",
     retriever: modernSCM([
         $class: 'GitSCMSource',
         remote: 'https://github.com/agarthetiger/jengu.git'
