@@ -1,2 +1,3 @@
 # jengu-demo
-How to use Jengu to test Jenkins Shared Library DSL code
+
+This is an example repo showing how to use [Jengu](https://github.com/agarthetiger/jengu) to test Jenkins Shared Library DSL code.
