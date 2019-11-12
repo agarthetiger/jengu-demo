@@ -1,8 +1,8 @@
 #!/usr/bin/env groovy
-library identifier: "jengu@v0.1.0",
+library identifier: "jengu@master",
     retriever: modernSCM([
         $class: 'GitSCMSource',
-        remote: 'git@github.com:agarthetiger/jenkins-shared-library.git'
+        remote: 'https://github.com/agarthetiger/jengu.git'
     ])
 
 def libraryVersion = (!env.BRANCH_NAME || env.BRANCH_NAME.startsWith('PR')) ?
@@ -10,7 +10,7 @@ def libraryVersion = (!env.BRANCH_NAME || env.BRANCH_NAME.startsWith('PR')) ?
 library identifier: "jengu-demo@${libraryVersion}",
     retriever: modernSCM([
         $class: 'GitSCMSource',
-        remote: 'git@github.com:agarthetiger/jengu-demo.git'
+        remote: 'https://github.com/agarthetiger/jengu-demo.git'
     ])
 
 pipeline {
